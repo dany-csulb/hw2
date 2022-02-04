@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a href="index.html">Main Page</a>
+      <h2>Ticket Form</h2>
+      <h4>Create a Ticket</h4>
+      <form>
+        Name: <input type="text" name="name" required><br>
+        Phone Number: <input type="number" name="number"><br>
+        Service Date: <input type="date" name="date"><br>
+        Email: <input type="email" name="email"><br>
+        Password: <input type="password" name="pwd"><br>
+      <table>
+        <tr>
+          <td valign="top">
+            Service:<br>
+            <select name="service">
+              <option value="ubeats">Uber Eats</option>
+              <option value="grub">GrubHub</option>
+              <option value="doordash">DoorDash</option>
+              <option value="postmates">Postmates</option>
+              <option value="reimburse">Reimbursements</option>
+            </select>
+          </td>
+          <td>
+            Payment:<br>
+            <input type="radio" name="pmt" value="zelle" checked>Zelle<br>
+            <input type="radio" name="pmt" value="venmo" checked>Venmo<br>
+            <input type="radio" name="pmt" value="cashapp" checked>CashApp<br>
+          </td>
+          <td valign="top">
+            Completed?<br>
+            <input type="checkbox" name="paid" value="paid">Paid<br>
+            <input type="checkbox" name="notpaid" value="notpaid">Pending Payment
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="Submit">
+      </form>
+  </body>
+</html>
